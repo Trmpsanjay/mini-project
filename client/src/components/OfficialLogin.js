@@ -21,16 +21,21 @@ const OfficialLogin = () => {
     const result = await fetch("/loginDepartment", {
       method: "POST",
       headers: {
-        "Content-Type": "appliation/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        email,password
+        "email" : email,"password" : password
       }),
     });
     console.log(email);
+    console.log(password);
     const data = await result.json();
     console.log(data);
-    alert(data);
+    console.log(data.login);
+    if(data.login){
+      window.alert("Login Successfull");
+            history.push("/Department");
+    }
   };
 
   // login admin
