@@ -62,15 +62,15 @@ const ViewStatus = () => {
 
                     {
 
-                        data.map((data) => (
+                        data.map((item) => (
 
-                            <tr key={data.name}>
+                            <tr key={item.id}>
 
-                                <td>{data.complaint}</td>
+                                <td>{item.name}</td>
 
-                                <td>{data.complaintStatus}</td>
+                                <td>{item.complaint}</td>
 
-                                <td/>
+                                <td>{item.complaintStatus}</td>
 
                             </tr>
 
