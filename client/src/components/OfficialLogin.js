@@ -36,6 +36,9 @@ const OfficialLogin = () => {
       window.alert("Login Successfull");
             history.push("/Department");
     }
+    else{
+      alert("invalid credentials")
+    }
   };
 
   // login admin

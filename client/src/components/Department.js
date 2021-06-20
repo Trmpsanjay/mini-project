@@ -51,7 +51,7 @@ const DeptMain = () => {
                             <form method="POST" className="deptAdd-form" id="deptAdd-form">
                                 
                                 <div className="form-group">
-                                <Link to="/viewComplaint" className="btn btn-primary">View Complaint</Link>   
+                                <Link to="/viewStatus" className="btn btn-primary">View Complaint</Link>   
                                 </div>
 
                                  <div className="form-group">

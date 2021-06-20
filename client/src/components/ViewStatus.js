@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+const axios = require('axios');
+
 
 const ViewStatus = () => {
 
@@ -7,20 +9,14 @@ const ViewStatus = () => {
 
     // GET request function to your Mock API
 
-    const callStatus = () => {
+    const callStatus = async () => {
 
-        fetch('/viewStatus', {
-            method: "GET",
-            headers: {
-                Accept: "appllication/json",
-                "Content-Type": "application/json"
-            },
-            credentials: "include"
-        })
-
-            .then(res => res.json())
-
-            .then(json => setData(json));
+       const data = await axios.post('/viewStatusDept',{
+           dept : "CSE"
+       })
+       console.log(data.data);
+       setData(data.data);
+       return data.data;
 
     }
 
@@ -66,6 +62,7 @@ const ViewStatus = () => {
 
                             <tr key={data.name}>
 
+                                <td>{data.name}</td>
                                 <td>{data.complaint}</td>
 
                                 <td>{data.complaintStatus}</td>

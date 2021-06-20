@@ -303,6 +303,21 @@ router.post("/viewStatus", async (req, res) => {
   }
 });
 
+router.post("/viewStatusDept", async (req, res) => {
+  try {
+    const { dept } = req.body;
+
+    if (!dept) {
+      return res.status(400).json({ error: "Plz Filled the data" });
+    }
+
+    const userData = await Complaint.find({ branch: dept });
+    res.send(userData);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 // updating status
 
 router.patch("/updateStatus", async (req, res) => {
