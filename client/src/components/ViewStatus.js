@@ -38,7 +38,7 @@ const ViewStatus = () => {
 
             <h1>View Complaint</h1>
 
-            <table>
+            <table class="styled-table">
 
                 <thead>
 
@@ -60,9 +60,10 @@ const ViewStatus = () => {
 
                         data.map((data) => (
 
-                            <tr key={data.name}>
+                            <tr key={data.id}>
 
                                 <td>{data.name}</td>
+                                
                                 <td>{data.complaint}</td>
 
                                 <td>{data.complaintStatus}</td>
