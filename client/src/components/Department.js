@@ -55,7 +55,7 @@ const DeptMain = () => {
                                 </div>
 
                                  <div className="form-group">
-                                 <Link to="/updateStatus" className="btn btn-primary">Update Status</Link>
+                                 <Link to="/UpdateStatus" className="btn btn-primary">Update Status</Link>
                                 </div>
                             </form>
                         </div>

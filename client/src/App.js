@@ -17,6 +17,7 @@ import AboutUs from "./components/AboutUs";
 import Complaint from "./components/Complaint";
 import Student from './components/Student';
 import ViewStatus from "./components/ViewStatus";
+import UpdateStatus from "./components/UpdateStatus";
 import Admin from "./components/Admin";
 import { initialState, reducer } from "./reducer/UseReducer";
 
@@ -53,6 +54,10 @@ const Routing = () => {
 
       <Route path="/officialLogin">
         <OfficialLogin />
+      </Route>
+
+      <Route path="/UpdateStatus">
+        <UpdateStatus />
       </Route>
 
       <Route path="/Admin">
