@@ -14,7 +14,6 @@ import AddDept from "./components/AddDepartment";
 import ViewDept from "./components/ViewDepartment";
 import Dept from "./components/Department";
 import Logout from "./components/Logout";
-import AboutUs from "./components/AboutUs";
 import Complaint from "./components/Complaint";
 import Student from './components/Student';
 import ViewStudent from "./components/ViewStudent";
@@ -37,10 +36,6 @@ const Routing = () => {
        <Switch>
       <Route exact path="/">
         <Home />
-      </Route>
-
-      <Route path="/AboutUs">
-        <AboutUs />
       </Route>
 
       <Route path="/about">
