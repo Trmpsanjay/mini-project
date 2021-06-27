@@ -341,4 +341,16 @@ router.patch("/updateStatus", async (req, res) => {
   }
 });
 
+router.get("/viewStudent", async (req, res) => {
+
+  const userData = await User.find();
+  res.send(userData);
+});
+
+router.get("/viewDepartment", async (req, res) => {
+
+  const userData = await Department.find();
+  res.send(userData);
+});
+
 module.exports = router;

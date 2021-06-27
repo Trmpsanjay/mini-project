@@ -47,7 +47,7 @@ const Complaint = () => {
 
         const { name, email, admissionno, branch, semester, phone, complaint} = userData;
 
-        const res = await fetch('/contact', {
+        const res = await fetch('/registerComplaint', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

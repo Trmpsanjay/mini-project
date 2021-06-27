@@ -50,7 +50,7 @@ const AdmMain = () => {
                             <form method="POST" className="deptAdd-form" id="deptAdd-form">
                                 
                                 <div className="form-group">
-                                <Link to="/viewComplaint" className="btn btn-primary">View Complaint</Link>   
+                                <Link to="/ViewStatus" className="btn btn-primary">View Complaint</Link>   
                                 </div>
 
                                  <div className="form-group">
@@ -58,7 +58,11 @@ const AdmMain = () => {
                                 </div>
 
                                 <div className="form-group">
-                                 <Link to="/viewStudent" className="btn btn-primary">View Students</Link>
+                                 <Link to="/viewDepartment" className="btn btn-primary">View Department</Link>
+                                </div>
+
+                                <div className="form-group">
+                                 <Link to="/ViewStudent" className="btn btn-primary">View Students</Link>
                                 </div>
                             </form>
                         </div>

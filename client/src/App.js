@@ -11,12 +11,15 @@ import OfficialLogin from "./components/OfficialLogin"
 import Signup from "./components/Signup";
 import ErrorPage from "./components/Errorpage";
 import AddDept from "./components/AddDepartment";
+import ViewDept from "./components/ViewDepartment";
 import Dept from "./components/Department";
 import Logout from "./components/Logout";
 import AboutUs from "./components/AboutUs";
 import Complaint from "./components/Complaint";
 import Student from './components/Student';
+import ViewStudent from "./components/ViewStudent";
 import ViewStatus from "./components/ViewStatus";
+import ViewStatusStd from "./components/ViewStatusStd";
 import UpdateStatus from "./components/UpdateStatus";
 import Admin from "./components/Admin";
 import { initialState, reducer } from "./reducer/UseReducer";
@@ -75,13 +78,25 @@ const Routing = () => {
       <Route path="/Student">
         <Student />
       </Route>
+
+      <Route path="/ViewStudent">
+        <ViewStudent />
+      </Route>
       
       <Route path="/ViewStatus">
         <ViewStatus />
       </Route>
+
+      <Route path="/ViewStatusStd">
+        <ViewStatusStd />
+      </Route>
        
       <Route path="/addDepartment">
         <AddDept />
+      </Route>
+
+      <Route path="/viewDepartment">
+        <ViewDept />
       </Route>
 
       <Route path="/Department">
