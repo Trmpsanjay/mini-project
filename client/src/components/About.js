@@ -43,19 +43,12 @@ const About = () => {
                 <form method="GET">
                     <div className="row">
                         <div className="col-md-4">
-                            <div className="profile-img">
-                                  {/* <img src={userData.name === "Sanjay" ? thapapic : aboutpic} alt="Sanjay" /> */}
-                            </div>
-                          
                         </div>
 
                          <div className="col-md-6">
                             <div className="profile-head">
                                 <h5>{ userData.name}</h5>
-                               <h6>{/*userData.work*/}</h6>
-                                {/* <p className="profile-rating mt-3 mb-5">RANKINGS: <span> 1/10 </span></p> */}
-
-
+                                
                                 <ul className="nav nav-tabs" role="tablist">
                                     <li className="nav-item">
                                    <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Profile</a>

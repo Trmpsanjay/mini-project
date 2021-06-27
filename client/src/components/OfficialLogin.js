@@ -62,16 +62,6 @@ const OfficialLogin = () => {
             <div className="signin-form">
               <h2 className="form-title">Department Login</h2>
               <form method="POST" className="register-form" id="register-form">
-                {/* <div className="form-group">
-                                    <label htmlFor="d_name">
-                                        <i className="zmdi zmdi-book material-icons-name"></i>
-                                    </label>
-                                    <input type="d_name" name="d_name" id="d_name" autoComplete="off"
-                                        value={d_name}
-                                        onChange={(e) => setDepartment(e.target.value)}
-                                        placeholder="Your Department"
-                                    />
-                                </div>  */}
                 <div className="form-group">
                   <label htmlFor="d_email">
                     <i className="zmdi zmdi-email material-icons-name"></i>

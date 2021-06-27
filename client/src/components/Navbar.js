@@ -44,20 +44,14 @@ const Navbar = () => {
                     <li className="nav-item active">
                         <NavLink exact activeClassName="active-page" className="nav-link" to="/">Home </NavLink>
                     </li>
-                    <li className="nav-item">
-                        <NavLink exact activeClassName="active-page" className="nav-link" to="/AboutUs">AboutUs</NavLink>
-                    </li>
                     
                     <li className="nav-item">
                         <NavLink exact activeClassName="active-page" className="nav-link" to="/contact">Contact</NavLink>
                     </li>
+
                     <li className="nav-item">
                         <NavLink exact activeClassName="active-page" className="nav-link" to="/Student">Student</NavLink>
                     </li>
-
-
-                    
-                    
                     
                     <li className="nav-item">
                         <NavLink exact activeClassName="active-page" className="nav-link" to="/officialLogin">Official Login</NavLink>

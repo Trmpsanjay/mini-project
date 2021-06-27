@@ -6,37 +6,9 @@ const AdmMain = () => {
 
     const history = useHistory();
     const [AdmData, setAdmData] = useState('');
-
-    /*const deptMainPage = async () => {
-        try {
-            const res = await fetch('/getdept', {
-                method: "GET",
-                headers: {
-                    Accept: "appllication/json",
-                    "Content-Type": "application/json"
-                },
-            });
-
-            const data = await res.json();
-            console.log(data);
-            setDeptData(data);
-
-            if (!res.status === 200) {
-                const error = new Error(res.error);
-                throw error;
-            }
-
-        } catch (err) {
-            console.log(err);
-        }
-    }
-
-    useEffect(() => {
-        deptMainPage();
-    }, []);*/
     return (
         <>
-            <section className="addDept">
+            <section className="admin">
                 <div className="container mt-5">
                     <div className="addDept-content">
                         <div className="addDept-form">
@@ -47,7 +19,7 @@ const AdmMain = () => {
                                 </figure>
                             </div>
 
-                            <form method="POST" className="deptAdd-form" id="deptAdd-form">
+                            <form method="POST" className="admin-form" id="admin-form">
                                 
                                 <div className="form-group">
                                 <Link to="/ViewStatus" className="btn btn-primary">View Complaint</Link>   
