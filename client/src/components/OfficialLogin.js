@@ -43,7 +43,14 @@ const OfficialLogin = () => {
 
   // login admin
   const loginAdmin = () => {
-    alert("Login successfull");
+    if(adminPassword === 'admin'){
+      alert("Login successfull");
+      history.push("/Admin");
+    }
+    else{
+      alert("invalid credentials")
+      history.push("/OfficialLogin");
+    }
   };
 
   return (
