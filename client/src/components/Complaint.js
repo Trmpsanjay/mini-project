@@ -44,6 +44,7 @@ const Complaint = () => {
 
     const complainForm = async (e) => {
         e.preventDefault();
+        const cmptid=1000
 
         const { name, email, admissionno, branch, semester, phone, complaint} = userData;
 
@@ -53,7 +54,8 @@ const Complaint = () => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                name, email, admissionno, branch, semester, phone, complaint
+                //name, email, admissionno, branch, semester, phone, complaint
+                cmptid, name, email, admissionno, phone, branch, semester, complaint
             })
         });
 

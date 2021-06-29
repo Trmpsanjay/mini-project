@@ -28,7 +28,7 @@ const Navbar = () => {
                         <NavLink exact activeClassName="active-page" className="nav-link" to="/Complaint">LodgeComplaint</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink exact activeClassName="active-page" className="nav-link" to="/ViewStatus">ViewStatus</NavLink>
+                        <NavLink exact activeClassName="active-page" className="nav-link" to="/ViewStatusStd">ViewStatus</NavLink>
                     </li>
 
                     

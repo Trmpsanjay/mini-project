@@ -18,6 +18,7 @@ import Complaint from "./components/Complaint";
 import Student from './components/Student';
 import ViewStudent from "./components/ViewStudent";
 import ViewStatus from "./components/ViewStatus";
+import ViewStatusAdm from "./components/ViewStatusAdm";
 import ViewStatusStd from "./components/ViewStatusStd";
 import UpdateStatus from "./components/UpdateStatus";
 import Admin from "./components/Admin";
@@ -80,6 +81,10 @@ const Routing = () => {
       
       <Route path="/ViewStatus">
         <ViewStatus />
+      </Route>
+
+      <Route path="/ViewStatusAdm">
+        <ViewStatusAdm />
       </Route>
 
       <Route path="/ViewStatusStd">

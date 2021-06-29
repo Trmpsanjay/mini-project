@@ -319,6 +319,12 @@ router.get("/viewStudent", async (req, res) => {
   res.send(userData);
 });
 
+router.get("/viewStatusAdm", async (req, res) => {
+
+  const userData = await Complaint.find();
+  res.send(userData);
+});
+
 router.get("/viewDepartment", async (req, res) => {
 
   const userData = await Department.find();

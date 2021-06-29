@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 const axios = require('axios');
 
 
-const ViewStatusStd = () => {
+const ViewStatusAdm = () => {
 
     const [data, setData] = useState([]);
 
@@ -11,17 +11,12 @@ const ViewStatusStd = () => {
 
     const callStatus = async () => {
 
-        const userId = await axios.get('/getdata')
-        const userEmail = userId.data.email;
-        const userData = await axios.post('/viewStatus',{
-            email: userEmail
-        })
+        const userData = await axios.get('/viewStatusAdm')
         console.log(userData.data);
         setData(userData.data);
         return userData.data;
 
     }
-
 
 
     // Calling the function on component mount
@@ -40,13 +35,13 @@ const ViewStatusStd = () => {
 
             <h1>View Complaint</h1>
 
-            <table className="styled-table">
+            <table class="styled-table">
 
                 <thead>
 
                 <tr>
 
-                    <th>Name</th>
+                    <th>Student Name</th>
 
                     <th>Complaint</th>
 
@@ -60,8 +55,9 @@ const ViewStatusStd = () => {
 
                     {
 
+                        data.map((data) => (
 
-                            <tr>
+                            <tr key={data.id}>
 
                                 <td>{data.name}</td>
                                 
@@ -72,6 +68,8 @@ const ViewStatusStd = () => {
                                 <td/>
 
                             </tr>
+
+                        ))
 
                     }
 
@@ -84,4 +82,4 @@ const ViewStatusStd = () => {
     );
 
 }
-export default ViewStatusStd
+export default ViewStatusAdm 

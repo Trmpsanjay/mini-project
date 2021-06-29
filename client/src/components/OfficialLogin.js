@@ -62,9 +62,9 @@ const OfficialLogin = () => {
               <figure>
                 <img src={loginpic} alt="Login pic" />
               </figure>
-              <NavLink to="/addDepartment" className="deptAdd-image-link">
+              {/* <NavLink to="/addDepartment" className="deptAdd-image-link">
                 Department not Added
-              </NavLink>
+              </NavLink> */}
             </div>
             <div className="signin-form">
               <h2 className="form-title">Department Login</h2>

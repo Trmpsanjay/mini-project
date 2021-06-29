@@ -22,12 +22,12 @@ const AdmMain = () => {
                             <form method="POST" className="admin-form" id="admin-form">
                                 
                                 <div className="form-group">
-                                <Link to="/ViewStatus" className="btn btn-primary">View Complaint</Link>   
+                                <Link to="/ViewStatusAdm" className="btn btn-primary">View Complaint</Link>   
                                 </div>
 
-                                 <div className="form-group">
+                                 {/* <div className="form-group">
                                  <Link to="/addDepartment" className="btn btn-primary">Add Department</Link>
-                                </div>
+                                </div> */}
 
                                 <div className="form-group">
                                  <Link to="/viewDepartment" className="btn btn-primary">View Department</Link>
