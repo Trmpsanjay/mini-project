@@ -65,7 +65,7 @@ const Complaint = () => {
             console.log("complains not send ");
         } else {
             alert("complains Send");
-            setUserData({ ...userData, complaint: "" });
+            setUserData({ ...userData, complaint});
         }
 
     }
@@ -106,8 +106,8 @@ const Complaint = () => {
                        </div>
                        <div className="form-group">
                                         <textarea className="text_field complain_form"
-                                            name="complains"
-                                           value={userData.complains}
+                                            name="complaint"
+                                           value={userData.complaint}
                                            onChange={handleInputs}
                                             placeholder="Write your problem in brief:" cols="30" rows="10"></textarea>
                         </div>
